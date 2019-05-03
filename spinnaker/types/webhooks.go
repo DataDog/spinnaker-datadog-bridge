@@ -44,8 +44,9 @@ type Execution struct {
 
 // Trigger represents a pipeline trigger
 type Trigger struct {
-	User string `json:"user,omitempty"`
-	Type string `json:"type,omitempty"`
+	User       string                 `json:"user,omitempty"`
+	Type       string                 `json:"type,omitempty"`
+	Parameters map[string]interface{} `json:"parameters,omitempty"`
 }
 
 // Authentication holds potential authentication information
